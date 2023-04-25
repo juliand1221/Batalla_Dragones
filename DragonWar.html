@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guerra de Dragones</title>
+    <script src="./js/DragonWar.js"></script>
+</head>
+<body>
+    <div>
+        <h1>GUERRA DE DRAGONES 🐉🔥💧🌱⚡</h1>
+
+        <section id="selec-dragon">
+            <h2>Elige tu dragon</h2>
+
+            <label for="flareon">Flareon</label>
+            <input type="radio" name="dragon" id="flareon">
+
+            <label for="mizuchi">Mizuchi</label>
+            <input type="radio" name="dragon" id="mizuchi">
+
+            <label for="krakatoa">Krakatoa</label>
+            <input type="radio" name="dragon" id="krakatoa">
+
+            <label for="fulgor">Fulgor</label>
+            <input type="radio" name="dragon" id="fulgor">
+
+            <label for="pyrothor">Pyrothor</label>
+            <input type="radio" name="dragon" id="pyrothor">
+
+            <label for="gaia">Gaia</label>
+            <input type="radio" name="dragon" id="gaia">
+
+            <!-- Flareon -> Fuego
+            Mizuchi -> Agua
+            Krakatoa -> Tierra
+            Fulgor -> Electrico
+            Pyrothor -> Fuego y Electrico
+            Gaia -> Agua y Tierra -->
+
+
+
+            <button id="boton-dragon">Seleccionar</button>
+        </section>
+
+        <section id="selec-ataque">
+            <h2>Elige tu ataque</h2>
+            <p>Tu dragon <span id="dragon-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
+            <p>El dragon <span id="dragon-enemigo"></span> enemigo tiene <span id="vidas-rival">3</span> vidas</p>
+            <p>
+                <button id="boton-fuego">Fuego 🔥</button>
+                <button id="boton-agua">Agua 💧</button>
+                <button id="boton-tierra">Tierra 🌱</button>
+                <button id="boton-electricidad">Electricidad ⚡</button>
+            </p>
+        </section>
+
+        <section id="mensajes">
+        </section>
+
+        <section id="mensaje-final">
+        </section>
+
+        <section id="reiniciar">
+            <button id="boton-reiniciar">Reiniciar</button>
+        </section>
+        
+    </div>
+</body>
+</html>
