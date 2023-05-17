@@ -6,31 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guerra de Dragones</title>
     <script src="./js/DragonWar.js"></script>
+    <link rel="stylesheet" href="./Styles/styles.css">
 </head>
 <body>
-    <div>
-        <h1>GUERRA DE DRAGONES 🐉🔥💧🌱⚡</h1>
-
         <section id="selec-dragon">
-            <h2>Elige tu dragon</h2>
+            <h1 class="titulo">GUERRA DE DRAGONES 🐉🔥💧🌱⚡</h1>
+            
+            <h2 class="sub">Elige tu dragon</h2>
 
-            <label for="flareon">Flareon</label>
-            <input type="radio" name="dragon" id="flareon">
-
-            <label for="mizuchi">Mizuchi</label>
-            <input type="radio" name="dragon" id="mizuchi">
-
-            <label for="krakatoa">Krakatoa</label>
-            <input type="radio" name="dragon" id="krakatoa">
-
-            <label for="fulgor">Fulgor</label>
-            <input type="radio" name="dragon" id="fulgor">
-
-            <label for="pyrothor">Pyrothor</label>
-            <input type="radio" name="dragon" id="pyrothor">
-
-            <label for="gaia">Gaia</label>
-            <input type="radio" name="dragon" id="gaia">
+            <div class="tarjetas-all">
+                <label class="tarjeta" for="flareon">
+                    <img src="./images/dragonFire.jpg" alt="Dragon Fuego">
+                    <div class="capa">
+                        <h3>FLAREON</h3>
+                        <p>Dragon de fuego, su aliento es un torrente de llamas 
+                            abrasadoras capaz de calcinar todo a su paso.</p>
+                    </div>
+                    Flareon 
+                </label>
+                <input type="radio" name="dragon" id="flareon">
+    
+                <label class="tarjeta" for="mizuchi">
+                    <img src="./images/dragonWater.jpg" alt="">
+                    <div class="capa">
+                        <h3>MIZUCHI</h3>
+                        <p>Dragon de agua, su aliento es un rocío refrescante
+                            y revitalizante que puede inundar o destruir todo a su paso.</p>
+                    </div>
+                    Mizuchi
+                </label>
+                <input type="radio" name="dragon" id="mizuchi">
+    
+                <label class="tarjeta" for="krakatoa">
+                    <img src="./images/dragonEarth.jpg" alt="">
+                    <div class="capa">
+                        <h3>KRAKATOA</h3>
+                        <p>Dragon terrestre, su aliento puede ser un rugido ensordecedor capaz de hacer temblar la tierra misma y destruir
+                            cualquier montana.</p>
+                    </div>
+                    Krakatoa
+                </label>
+                <input type="radio" name="dragon" id="krakatoa">
+    
+                <label class="tarjeta" for="fulgor">
+                    <img src="./images/dragonElectry.jpg" alt="">
+                    <div class="capa">
+                        <h3>FULGOR</h3>
+                        <p>Dragon electrico, Su aliento es un rayo poderoso que puede iluminar
+                         la oscuridad y electrificar cualquier cosa en su camino.</p>
+                    </div>
+                    Fulgor
+                </label>
+                <input type="radio" name="dragon" id="fulgor">
+    
+                <label class="tarjeta" for="pyrothor">
+                    <img src="./images/dragonFuegoElectric.jpg" alt="">
+                    <div class="capa">
+                        <h3>PYROTHOR</h3>
+                        <p>Dragon de fuego y electrico, Su aliento es una combinación de llamas
+                             abrasadoras y rayos eléctricos, capaz de incinerar y electrocutar
+                             todo a su alrededor. </p>
+                    </div>
+                    Pyrothor
+                </label>
+                <input type="radio" name="dragon" id="pyrothor">
+    
+                <label class="tarjeta" for="gaia">
+                    <img src="./images/dragonAguaTierra.jpg" alt="">
+                    <div class="capa">
+                        <h3>GAIA</h3>
+                        <p>Dragon de agua y terrestre, Su aliento conjuga agua y tierra,
+                             capaz de generar corrientes tumultuosas y lanzar proyectiles de fango con una precisión devastadora.</p>
+                    </div>
+                    Gaia
+                </label>
+                <input type="radio" name="dragon" id="gaia">
+            </div>
 
             <!-- Flareon -> Fuego
             Mizuchi -> Agua
@@ -38,13 +89,13 @@
             Fulgor -> Electrico
             Pyrothor -> Fuego y Electrico
             Gaia -> Agua y Tierra -->
-
-
-
+            
             <button id="boton-dragon">Seleccionar</button>
         </section>
 
         <section id="selec-ataque">
+            <h1 class="titulo">GUERRA DE DRAGONES 🐉🔥💧🌱⚡</h1>
+
             <h2>Elige tu ataque</h2>
             <p>Tu dragon <span id="dragon-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
             <p>El dragon <span id="dragon-enemigo"></span> enemigo tiene <span id="vidas-rival">3</span> vidas</p>
@@ -66,6 +117,6 @@
             <button id="boton-reiniciar">Reiniciar</button>
         </section>
         
-    </div>
+    
 </body>
 </html>
