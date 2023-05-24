@@ -65,7 +65,7 @@ function seleccionarDragonJugador(){
 
     if(inputFlareon.checked){
         alert('Seleccionaste a Flareon')
-        spanDragonJugador.innerHTML = 'Flareon'
+        spanDragonJugador.innerHTML = ' Flareon'
         imagenDragonJugador.appendChild(dragonUno)
     }else if(inputMizuchi.checked){
         alert('Seleccionaste a Mizuchi')
@@ -232,15 +232,19 @@ function batallaDragones(){
 }
 
 function revisarVidas(){
+    let cartaUno = document.getElementById('cartaUno')
+    let cartaDos = document.getElementById('cartaDos')
 
     if(vidasJugador == 0){
-        resultadoFinal = "LASTIMOSAMENTE PERDISTE 😔"
+        resultadoFinal = "LASTIMOSAMENTE PERDISTE"
         alert(resultadoFinal)
         mensajeFinal();
+        cartaUno.style.display = 'none'
     }else if( vidasRival == 0){
-        resultadoFinal = "FELICITACIONES GANASTE 😁🎉🍾🎊"
+        resultadoFinal = "FELICITACIONES GANASTE"
         alert(resultadoFinal)
         mensajeFinal();
+        cartaDos.style.display = 'none'
     }
 }
 function crearMensaje(){
@@ -249,21 +253,23 @@ function crearMensaje(){
     let ataqueDelEnemigo = document.getElementById('ataqueDelEnemigo')
 
     
-    let nuevoAtaqueDelJugador = document.createElement('p')
-    let nuevoAtaqueDelEnemigo = document.createElement('p')
+    // let nuevoAtaqueDelJugador = document.createElement('p')
+    // let nuevoAtaqueDelEnemigo = document.createElement('p')
 
     sectionMensajes.innerHTML = resultadoBatalla
-    nuevoAtaqueDelJugador.innerHTML = ataqueJugador
-    nuevoAtaqueDelEnemigo.innerHTML = ataqueOponente
+    ataqueDelJugador.innerHTML = ataqueJugador
+    ataqueDelEnemigo.innerHTML = ataqueOponente
 
-    ataqueDelJugador.appendChild(nuevoAtaqueDelJugador)
-    ataqueDelEnemigo.appendChild(nuevoAtaqueDelEnemigo)
+    // ataqueDelJugador.appendChild(nuevoAtaqueDelJugador)
+    // ataqueDelEnemigo.appendChild(nuevoAtaqueDelEnemigo)
 }
 
 function mensajeFinal(){
     let sectionMensajes = document.getElementById('resultado2')
+    let resMensaje = document.getElementById('res-mensaje')
 
     sectionMensajes.innerHTML= resultadoFinal
+    resMensaje.innerHTML = 'Dragon Ganador'
 
     let botonFuego = document.getElementById('boton-fuego')
     botonFuego.disabled = true
@@ -276,6 +282,8 @@ function mensajeFinal(){
 
     let prueba = document.getElementById('resultado')
     prueba.style.display = 'none'
+    let selectAtaque = document.getElementById('selectAtaque')
+    selectAtaque.style.display = 'none'
     let selectionReinicio = document.getElementById('boton-reiniciar')
     selectionReinicio.style.display = 'block'
 }
