@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guerra de Dragones</title>
+    <script src="./js/DragonWar.js"></script>
+    <link rel="stylesheet" href="./Styles/styles.css">
+</head>
+<body>
+        <section id="selec-dragon">
+            <h1 class="titulo"> Dragons of Dominion: 
+                <br>
+                Batalla de Elementos </h1>
+            
+            <h2 class="sub">Elige tu dragon</h2>
+
+            <div class="tarjetas-all">
+                <input type="radio" name="dragon" id="flareon">
+                <label class="tarjeta" for="flareon">
+                    <img src="./images/dragonFire.jpg" alt="Dragon Fuego">
+                    <div class="capa">
+                        <h3>FLAREON</h3>
+                        <p>De las tierras de Draconia, Flareon es un majestuoso dragon de escamas rojas
+                            que parecen arder con una intensa energia, sus ojos resplandecen con un fuego interior.</p>
+                    </div>
+                    Flareon 
+                </label>
+                
+                <input type="radio" name="dragon" id="mizuchi">
+                <label class="tarjeta" for="mizuchi">
+                    <img src="./images/dragonWater.jpg" alt="">
+                    <div class="capa">
+                        <h3>MIZUCHI</h3>
+                        <p>De las tierras de Oceanica aparece Mizuchi, un dragon que emerge de las profundidades
+                            del oceano, cubierto con escamas azuladas sus ojos reflejan la sabiduria del oceano.</p>
+                    </div>
+                    Mizuchi
+                </label>
+                
+                <input type="radio" name="dragon" id="krakatoa">
+                <label class="tarjeta" for="krakatoa">
+                    <img src="./images/dragonEarth.jpg" alt="">
+                    <div class="capa">
+                        <h3>KRAKATOA</h3>
+                        <p>Este dragon proveniente de las tierras de Verdantis, posee escamas verdes las cuales reflejan
+                            los densos bosques en los que vive y le sirven como camuflaje, sus ojos demuestran su sabiduria.
+                        </p>
+                    </div>
+                    Krakatoa
+                </label>
+                
+                <input type="radio" name="dragon" id="fulgor">
+                <label class="tarjeta" for="fulgor">
+                    <img src="./images/dragonElectry.jpg" alt="">
+                    <div class="capa">
+                        <h3>FULGOR</h3>
+                        <p>Acostumbrado a la tierra gelida y cubierta de nieve eterna como es Glaiciarum, este dragon
+                            con un figura robusta y poderosa, surca los cielos con elegancia, sus ojos reflejan un frio intenso.
+                        </p>
+                    </div>
+                    Fulgor
+                </label>
+                
+                <input type="radio" name="dragon" id="pyrothor">
+                <label class="tarjeta" for="pyrothor">
+                    <img src="./images/dragonFuegoElectric.jpg" alt="">
+                    <div class="capa">
+                        <h3>PYROTHOR</h3>
+                        <p>Desde las oscuras tierras de Eclipsea, llamado asi por su noche perpetua, emerge Pyrothor
+                             cuya presencia es imponente, su cuerpo escamoso está envuelto en una penumbra insondable. </p>
+                    </div>
+                    Pyrothor
+                </label>
+                
+                <input type="radio" name="dragon" id="gaia">
+                <label class="tarjeta" for="gaia">
+                    <img src="./images/dragonAguaTierra.jpg" alt="">
+                    <div class="capa">
+                        <h3>GAIA</h3>
+                        <p>Este dragon proveniente de Aerion, tierra flotante en los cielos. Su presencia es tan resplandeciente
+                            como el brillo solar y su apariencia irradia energia, sus ojos son una luz calida.</p>
+                    </div>
+                    Gaia
+                </label>
+
+                <div class="info-juego">
+                    <h1>"Dragons of Dominion: Batalla de Elementos"</h1> 
+                    <p>Es un emocionante juego de guerra donde los jugadores
+                    asumen el papel de poderosos dragones y luchan en épicas batallas
+                    para reclamar la supremacía elemental. Los jugadores podrán elegir
+                    entre una variedad de dragones, cada uno con sus propias habilidades
+                    y características únicas, y personalizar su estrategia al elegir qué 
+                    poderes lanzar en combate.</p>
+                </div>
+                
+            </div>
+            <button id="boton-dragon">Seleccionar</button>
+        </section>
+
+        <section id="selec-ataque">
+            <h1 class="titulo">Dragons of Dominion: 
+                <br>
+                Batalla de Elementos</h1>
+            
+            <div class="informacion">
+                <div class="info-jugador">
+                    <div class="imagen-ataque" id="imagenDragonJugador"></div>
+                    <p id="vidas-jugador">3</p>
+                    <p id="dragon-jugador"></p>
+                    <p id="ataqueDelJugador"></p>
+                </div>
+                <div class="info-enemigo">
+                    <div class="imagen-ataque" id="imagenDragonEnemigo"></div>
+                    <p id="vidas-rival">3</p>
+                    <p id="dragon-enemigo"></p>
+                    <p id="ataqueDelEnemigo"></p>
+                </div>
+            </div>  
+
+            <h2>Elige tu ataque</h2>
+
+            <div class="ataqueJugador">
+                <button class="botonAtaque" id="boton-fuego"> <img src="./images/fire.png" alt="fuego"/> </button>
+                <button class="botonAtaque" id="boton-agua"> <img src="./images/snowflake.png" alt="nieve"> </button>
+                <button class="botonAtaque" id="boton-tierra"> <img src="./images/wind.png" alt="viento"> </button>
+                <button class="botonAtaque" id="boton-electricidad"> <img src="./images/rock.png" alt="roca"> </button>
+            </div>
+
+            
+            <div id="mensajes">
+                <p id="resultado">Elige Bien Tu Poder</p>
+                <p id="resultado2"></p>
+                
+                <section id="reiniciar">
+                    <button id="boton-reiniciar">Reiniciar</button>
+                </section>
+            </div>
+      
+        </section>
+
+        
+        
+    
+</body>
+</html>
