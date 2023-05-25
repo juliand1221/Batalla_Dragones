@@ -20,7 +20,7 @@ body{
 .titulo {
     color: #61481C;
     font-size: 50px;
-    margin: 1%;
+    margin: 2px;
     text-align: center;
 }
 .info-juego{
@@ -31,6 +31,7 @@ body{
     color: #E6B325;
     border-radius: 20px;
     padding: 10px;
+    margin-top: 10px;
     border: 2px solid #E6B325;
 }
 .info-juego h1{
@@ -53,7 +54,7 @@ body{
 .tarjeta{
     position: relative;
     width: 250px;
-    height: 260px;
+    height: 270px;
     background: #E6B325;
     color: #61481C;
     padding: 10px;
@@ -120,6 +121,7 @@ input{
     margin-top: 0;
 }
 #boton-dragon{
+    display: none;
     margin: 2%;
     width: 180px;
     height: 40px;
@@ -138,6 +140,7 @@ input{
     display: grid;
     grid-template-columns: auto auto;
     gap: 20px;
+    padding-top: 10px;
     justify-content: center;
 }
 .imagen-ataque img{
@@ -173,7 +176,12 @@ input{
     align-items: center;
 }
 #res-mensaje{
-    color: #fff;
+    color: white;
+    margin-top: 10px;
+}
+#res-mensaje2{
+    color: white;
+    margin-top: 0;
 }
 .ataqueJugador{
     display: flex;
@@ -204,7 +212,7 @@ input{
     height: 100px;
     background: #E6B325;
     padding: 2px 8px;
-    margin-top: 10px;
+    margin-top: 0;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -212,6 +220,7 @@ input{
     color: #61481C;
     flex-direction: column;
     text-align: center;
+    justify-content: flex-end;
 }
 #boton-reiniciar{
     background: #61481C;

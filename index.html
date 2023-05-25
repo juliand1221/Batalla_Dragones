@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guerra de Dragones</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="./js/DragonWar.js"></script>
     <link rel="stylesheet" href="./Styles/styles.css">
 </head>
@@ -126,7 +127,18 @@
                 </div>
             </div>  
 
-            <h2 id="res-mensaje">Elige tu ataque</h2>
+            <h2 id="res-mensaje">Resultado</h2>
+
+            <div id="mensajes">
+                <p id="resultado">Elige Bien Tu Poder</p>
+                <p id="resultado2"></p>
+                
+                <section id="reiniciar">
+                    <button id="boton-reiniciar">Reiniciar</button>
+                </section>
+            </div>
+
+            <h2 id="res-mensaje2">Elige tu ataque</h2>
 
             <div id="selectAtaque" class="ataqueJugador">
                 <button class="botonAtaque" id="boton-fuego"> <img src="./images/fire.png" alt="fuego"/> </button>
@@ -136,14 +148,7 @@
             </div>
 
             
-            <div id="mensajes">
-                <p id="resultado">Elige Bien Tu Poder</p>
-                <p id="resultado2"></p>
-                
-                <section id="reiniciar">
-                    <button id="boton-reiniciar">Reiniciar</button>
-                </section>
-            </div>
+           
       
         </section>
 

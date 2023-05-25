@@ -13,6 +13,16 @@ function iniciarJuego(){
     let selectionReinicio = document.getElementById('boton-reiniciar')
     selectionReinicio.style.display = 'none'
 
+    let radioBtns = document.querySelectorAll('input[type="radio"]');
+    for (var i=0; i<radioBtns.length;i++){
+        radioBtns[i].addEventListener('change',function(){
+            if(this.checked){
+                botonDragonJugador.style.display='block';
+            } else{
+                botonDragonJugador.style.display='none';
+            }
+        });
+    }
 
     let botonDragonJugador = document.getElementById('boton-dragon');
     botonDragonJugador.addEventListener('click', seleccionarDragonJugador)
@@ -64,31 +74,25 @@ function seleccionarDragonJugador(){
     
 
     if(inputFlareon.checked){
-        alert('Seleccionaste a Flareon')
         spanDragonJugador.innerHTML = ' Flareon'
         imagenDragonJugador.appendChild(dragonUno)
     }else if(inputMizuchi.checked){
-        alert('Seleccionaste a Mizuchi')
         spanDragonJugador.innerHTML = 'Mizuchi'
         imagenDragonJugador.appendChild(dragonDos)
     }else if(inputKrakatoa.checked){
-        alert('Seleccionaste a Krakatoa')
-        spanDragonJugador.innerHTML = 'Krakatoa'
+            spanDragonJugador.innerHTML = 'Krakatoa'
         imagenDragonJugador.appendChild(dragonTres)
     }else if(inputFulgor.checked){
-        alert('Seleccionaste a Fulgor')
         spanDragonJugador.innerHTML = 'Fulgor'
         imagenDragonJugador.appendChild(dragonCuatro)
     }else if(inputPyrothor.checked){
-        alert('Seleccionaste a Pyrothor')
         spanDragonJugador.innerHTML = 'Pyrothor'
         imagenDragonJugador.appendChild(dragonCinco)
     }else if(inputGaia.checked){
-        alert('Seleccionaste a Gaia')
         spanDragonJugador.innerHTML = 'Gaia'
         imagenDragonJugador.appendChild(dragonSeis)
     }else {
-        alert('Selecciona un Dragon')
+        reiniciarJuego();
     }
 
     seleccionarDragonRival();
@@ -115,27 +119,27 @@ function seleccionarDragonRival(){
 
 
     if(dragonAleatorio == 1){
-        alert('Tu oponente escogio Flareon')
+        swal('FLAREON','El PC escogio a Flareon como tu oponente', 'info');
         spanDragonRival.innerHTML = 'Flareon'
         imagenDragonRival.appendChild(dragonUno)
     }else if(dragonAleatorio == 2){
-        alert('Tu oponente escogio Mizuchi')
+        swal('MIZUCHI','El PC escogio a Mizuchi como tu oponente', 'info');
         spanDragonRival.innerHTML = 'Mizuchi'
         imagenDragonRival.appendChild(dragonDos)
     }else if(dragonAleatorio == 3){
-        alert('Tu oponente escogio Krakatoa')
+        swal('KRAKATOA','El PC escogio a Krakatoa como tu oponente', 'info');
         spanDragonRival.innerHTML = 'Krakatoa'
         imagenDragonRival.appendChild(dragonTres)
     }else if(dragonAleatorio == 4){
-        alert('Tu oponente escogio Fulgor')
+        swal('FULGOR','El PC escogio a Fulgor como tu oponente', 'info');
         spanDragonRival.innerHTML = 'Fulgor'
         imagenDragonRival.appendChild(dragonCuatro)
     }else if(dragonAleatorio == 5){
-        alert('Tu oponente escogio Pyrothor')
+        swal('PYROTHOR','El PC escogio a Pyrothor como tu oponente', 'info');
         spanDragonRival.innerHTML = 'Pyrothor'
         imagenDragonRival.appendChild(dragonCinco)
     }else if(dragonAleatorio == 6){
-        alert('Tu oponente escogio Gaia')
+        swal('GAIA','El PC escogio a Gaia como tu oponente', 'info');
         spanDragonRival.innerHTML = 'Gaia'
         imagenDragonRival.appendChild(dragonSeis)
     }
@@ -144,22 +148,22 @@ function seleccionarDragonRival(){
 
 function ataqueFuego() {
     ataqueJugador = 'ALIENTO DE FUEGO'
-    alert('Tu Dragon lanza '+ ataqueJugador +' a su oponente')
+    // swal('Tu Dragon lanza '+ ataqueJugador +' a su oponente')
     seleccionarAtaqueRival();
 }
 function ataqueAgua() {
     ataqueJugador = 'ALIENTO DE HIELO'
-    alert('Tu Dragon lanza '+ ataqueJugador +' a su oponente')
+    // swal('Tu Dragon lanza '+ ataqueJugador +' a su oponente')
     seleccionarAtaqueRival();
 }
 function ataqueTierra() {
     ataqueJugador = 'RAFAGA DE VIENTO'
-    alert('Tu Dragon lanza '+ ataqueJugador +' a su oponente')
+    // swal('Tu Dragon lanza '+ ataqueJugador +' a su oponente')
     seleccionarAtaqueRival();
 }
 function ataqueElectricidad() {
     ataqueJugador = 'PODER DE TIERRA'
-    alert('Tu Dragon lanza '+ ataqueJugador +' a su oponente')
+    // swal('Tu Dragon lanza '+ ataqueJugador +' a su oponente')
     seleccionarAtaqueRival();
 }
 
@@ -169,23 +173,14 @@ function seleccionarAtaqueRival(){
 
     if(ataqueRival == 1){
         ataqueOponente = 'ALIENTO DE FUEGO'
-        alert('El Dragon rival lanza '+ ataqueOponente +' a tu dragon')
-        
-
     }else if(ataqueRival == 2){
-        ataqueOponente = 'ALIENTO DE HIELO'
-        alert('El Dragon rival lanza '+ ataqueOponente +' a tu dragon')
-        
+        ataqueOponente = 'ALIENTO DE HIELO'      
     }
     else if(ataqueRival == 3){
-        ataqueOponente = 'RAFAGA DE VIENTO'
-        alert('El Dragon rival lanza '+ ataqueOponente +' a tu dragon')
-       
+        ataqueOponente = 'RAFAGA DE VIENTO'     
     }
     else if(ataqueRival == 4){
-        ataqueOponente = 'PODER DE TIERRA'
-        alert('El Dragon rival lanza '+ ataqueOponente +' a tu dragon')
-    }
+        ataqueOponente = 'PODER DE TIERRA'  }
 
     batallaDragones();
     crearMensaje();
@@ -197,30 +192,30 @@ function batallaDragones(){
 
     if(ataqueJugador == ataqueOponente) {
         resultadoBatalla = 'EMPATE'
-        alert('EMPATE')
+        swal('El Dragon rival lanza '+ ataqueOponente +' a tu dragon: '+ resultadoBatalla)
     }else if( ataqueJugador == 'ALIENTO DE FUEGO' && ataqueOponente == 'ALIENTO DE HIELO'){
         resultadoBatalla = 'GANASTE'
-        alert('GANASTE')
+        swal('El Dragon rival lanza '+ ataqueOponente +' a tu dragon: '+ resultadoBatalla)
         vidasRival--
         spanVidasRival.innerHTML=vidasRival
     }else if( ataqueJugador == 'ALIENTO DE HIELO' && ataqueOponente == 'RAFAGA DE VIENTO'){
         resultadoBatalla = 'GANASTE'
-        alert('GANASTE')
+        swal('El Dragon rival lanza '+ ataqueOponente +' a tu dragon: '+ resultadoBatalla)
         vidasRival--
         spanVidasRival.innerHTML=vidasRival
     }else if( ataqueJugador == 'RAFAGA DE VIENTO' && ataqueOponente == 'PODER DE TIERRA'){
         resultadoBatalla = 'GANASTE'
-        alert('GANASTE')
+        swal('El Dragon rival lanza '+ ataqueOponente +' a tu dragon: '+ resultadoBatalla)
         vidasRival--
         spanVidasRival.innerHTML=vidasRival
     }else if( ataqueJugador == 'PODER DE TIERRA' && ataqueOponente == 'ALIENTO DE FUEGO'){
         resultadoBatalla = 'GANASTE'
-        alert('GANASTE')
+        swal('El Dragon rival lanza '+ ataqueOponente +' a tu dragon: '+ resultadoBatalla)
         vidasRival--
         spanVidasRival.innerHTML=vidasRival
     }else {
         resultadoBatalla = 'PIERDES'
-        alert('PERDISTE')
+        swal('El Dragon rival lanza '+ ataqueOponente +' a tu dragon: '+ resultadoBatalla)
         vidasJugador--
         spanVidasJugador.innerHTML= vidasJugador
     }
@@ -237,12 +232,12 @@ function revisarVidas(){
 
     if(vidasJugador == 0){
         resultadoFinal = "LASTIMOSAMENTE PERDISTE"
-        alert(resultadoFinal)
+        // alert(resultadoFinal)
         mensajeFinal();
         cartaUno.style.display = 'none'
     }else if( vidasRival == 0){
         resultadoFinal = "FELICITACIONES GANASTE"
-        alert(resultadoFinal)
+        // alert(resultadoFinal)
         mensajeFinal();
         cartaDos.style.display = 'none'
     }
@@ -284,6 +279,8 @@ function mensajeFinal(){
     prueba.style.display = 'none'
     let selectAtaque = document.getElementById('selectAtaque')
     selectAtaque.style.display = 'none'
+    let eligeAtaque = document.getElementById('res-mensaje2')
+    eligeAtaque.style.display = 'none'
     let selectionReinicio = document.getElementById('boton-reiniciar')
     selectionReinicio.style.display = 'block'
 }
