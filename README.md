@@ -1,4 +1,4 @@
-#:tw-1f409: Dragons of Dominion: Batalla de Elementos :tw-1f432:
+#Dragons of Dominion: Batalla de Elementos
 ------------
 *Bienvenido a Dragons of Dominion: Batalla de Elementos, un emocionante juego donde tendrás la oportunidad de escoger y enfrentar a poderosos dragones en una batalla épica. Demuestra tu destreza estratégica y tus habilidades de combate mientras te sumerges en el mundo de los dragones y luchas por la dominación.*
 
@@ -19,7 +19,7 @@
 
 4. *Recolector de vidas: Al comenzar el juego tienes 3 vidas al igual que tu oponente, por cada jugada dependiendo de tu poder y el poder que escogio tu oponente (Interaccion de poderes)  puedes perder una vida, al final el que su contador llegue a 0 pierde. * 
 
-### Interacciones de poderes:
+###Interacciones de poderes:
 *Se establece una relación de ventaja y desventaja elemental:*
 - :tw-1f525: *Fuego > Hielo: El poder de fuego es efectivo contra el poder de hielo.*
 - :tw-2744:  *Hielo > Tierra: El poder de hielo es efectivo contra el poder de tierra.*
