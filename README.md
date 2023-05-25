@@ -1,8 +1,8 @@
-#:tw-1f409: Dragons of Dominion: Batalla de Elementos :tw-1f432:
+# Dragons of Dominion: Batalla de Elementos 🐉
 ------------
 *Bienvenido a Dragons of Dominion: Batalla de Elementos, un emocionante juego donde tendrás la oportunidad de escoger y enfrentar a poderosos dragones en una batalla épica. Demuestra tu destreza estratégica y tus habilidades de combate mientras te sumerges en el mundo de los dragones y luchas por la dominación.*
 
-###Características principales:
+### Características principales:
 - #### Selección de dragones: 
 *Elige entre 6 dragones únicos, cada uno con habilidades especiales y elementos elementales: fuego, hielo, tierra y viento. Cada dragón tiene su propio estilo de juego y ventajas estratégicas.*
 - #### Batallas emocionantes: 
@@ -10,7 +10,7 @@
 - #### Escoge 4 poderes:
 *Antes de cada batalla, elige sabiamente 4 poderes de entre los elementos disponibles: aliento de fuego, aliento de hielo, rafaga de viento y poder de tierra. Cada poder tiene un efecto único en el combate y puede marcar la diferencia entre la victoria y la derrota.*
 
-###Guía de juego:
+### Guía de juego:
 1. *Selecciona tu dragón: Escoge uno de los 6 dragones disponibles. Lee sus descripciones.*
 
 2. *Escoge tus poderes: Antes de cada batalla, selecciona 4 poderes de entre los elementos disponibles: fuego, hielo, tierra y viento.* 
@@ -21,13 +21,13 @@
 
 ### Interacciones de poderes:
 *Se establece una relación de ventaja y desventaja elemental:*
-- :tw-1f525: *Fuego > Hielo: El poder de fuego es efectivo contra el poder de hielo.*
-- :tw-2744:  *Hielo > Tierra: El poder de hielo es efectivo contra el poder de tierra.*
-- :tw-1f330: *Tierra > Viento: El poder de tierra es efectivo contra el poder de viento.*
-- :tw-1f4a8: *Viento > Fuego: El poder de viento es efectivo contra el poder de fuego.*
+- 🔥*Fuego > Hielo: El poder de fuego es efectivo contra el poder de hielo.*
+- ❄️*Hielo > Tierra: El poder de hielo es efectivo contra el poder de tierra.*
+- 🪨*Tierra > Viento: El poder de tierra es efectivo contra el poder de viento.*
+- 💨*Viento > Fuego: El poder de viento es efectivo contra el poder de fuego.*
 
 *Si ambos jugadores seleccionan el mismo poder, se produce un empate.*
 
 > Julian David Tenorio Y
 
-## :tw-1f4a5: DIVIERTE EN ESTE MARAVILLOSO JUEGO :tw-1f4af:
+## DIVIERTE EN ESTE MARAVILLOSO JUEGO 💯
