@@ -65,12 +65,12 @@ function seleccionarDragonJugador(){
     let dragonCinco = document.createElement('img');
     let dragonSeis = document.createElement('img');
 
-    dragonUno.src= '../images/dragonFire.jpg'
-    dragonDos.src= '../images/dragonWater.jpg'
-    dragonTres.src= '../images/dragonEarth.jpg'
-    dragonCuatro.src= '../images/dragonElectry.jpg'
-    dragonCinco.src= '../images/dragonFuegoElectric.jpg'
-    dragonSeis.src= '../images/dragonAguaTierra.jpg'
+    dragonUno.src= '/images/dragonFire.jpg'
+    dragonDos.src= '/images/dragonWater.jpg'
+    dragonTres.src= '/images/dragonEarth.jpg'
+    dragonCuatro.src= '/images/dragonElectry.jpg'
+    dragonCinco.src= '/images/dragonFuegoElectric.jpg'
+    dragonSeis.src= '/images/dragonAguaTierra.jpg'
     
 
     if(inputFlareon.checked){
